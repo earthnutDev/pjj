@@ -31,7 +31,7 @@ npm install bvn --save-dev
 ```json
 {
   "scripts": {
-    "prepublishOnly": "npx bvn"
+    "prepublishOnly": "bvn"
   }
 }
 ```
@@ -41,7 +41,7 @@ npm install bvn --save-dev
 ```json
 {
   "scripts": {
-    "prepublishOnly": "npx bvn -m '请在 dist 目录下执行 npm publish'"
+    "prepublishOnly": "bvn -m '请在 dist 目录下执行 npm publish'"
   }
 }
 ```
@@ -51,12 +51,26 @@ npm install bvn --save-dev
 ```json
 {
   "scripts": {
-    "prepublishOnly": "npx bvn -m '请在 dist 目录下执行 npm publish' -b"
+    "prepublishOnly": "bvn -m '请在 dist 目录下执行 npm publish' -b"
   }
 }
 ```
 
-_添加了 `-s` 命令用于替换默认 prepublishOnly，但是还不知道怎么用，慎用_
+需要注意
+
+- 添加了 `-s` 命令用于替换默认 prepublishOnly，但是还不知道怎么用，慎用
+- 在使用命令 `bvn` 时，需保证在项目中进行了安装
+- 只要将该命令配置到 `"prepublishOnly": "bvn"` 时，总会在执行 `npm publish` 时阻止执行 `npm publish`
+- 该命令仅适用于 `npm publish`
+- 使用该命令请不要使用 `npx` 调用，除非配置 `-s npx` 命令
+
+```json
+{
+  "scripts": {
+    "prepublishOnly": "npx bvn -s npx"
+  }
+}
+```
 
 ## 文档地址
 
