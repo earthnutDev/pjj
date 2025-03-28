@@ -45,7 +45,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/earthnutDev/bvn.git')"
+    "url": "git+https://github.com/earthnutDev/bvn.git"
   },
   "publishConfig": {
     "access": "public",
