@@ -41,6 +41,9 @@ const script =
 /**    命令结束回调  */
 const end = () => process.exit(1);
 
+/**
+ *  空行
+ */
 const space = '\n'.repeat(3);
 
 const line = () => {
