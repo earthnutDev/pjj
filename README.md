@@ -8,6 +8,8 @@
 
 ---
 
+_发现个更简单的方法，直接在 `package.json` 中添加 `private: true` 更简单粗暴_
+
 禁止在项目的根目录执行 npm publish，防止意外发布。该脚本命令仅允许在 `prepublishOnly` ` 钩子中执行。
 
 因为我的项目都是打包到 `dist` 目录下，然后再 `cd dist` 在 dist 目录下执行 `npm publish`，所以需要禁止在根目录执行 `npm publish`。

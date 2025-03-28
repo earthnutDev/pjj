@@ -15,7 +15,7 @@ export default {
       preserveModules: true,
       sourcemap: false,
       exports: 'named',
-      dir: 'dist/',
+      dir: 'dist/mjs',
     },
     //  若是生成 `bin` 类型，或是生成的文件不包含 commonJs，下面导出 commonJs 的配置可是删除
     // {
@@ -47,7 +47,6 @@ export default {
     cleanup(),
     copy({
       targets: [
-        { src: 'package.json', dest: 'dist' },
         { src: 'README.md', dest: 'dist' },
         { src: 'LICENSE', dest: 'dist' },
         // 若是生成 bin 类型的包，可以将下面的代码打开

@@ -1,7 +1,9 @@
 {
   "name": "bvn",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "module": "./mjs/index.mjs",
+  "private": true,
   "author": {
     "name": "earthnut",
     "email": "earthnut.dev@outlook.com",
@@ -18,8 +20,8 @@
     "beautify": "npm run prettier",
     "prettier": "npx ixxx cls && prettier . --write",
     "test": "npx ixxx cls && jest --coverage",
-    "prepublishOnly": "npm run build && node dist/bin/bvn.js",
     "vsu": "npx vsu",
+    "prepublishOnly": "npm run build && node dist/bin/bvn.js",
     "prepare": "husky"
   },
   "files": [
@@ -53,6 +55,7 @@
   },
   "dependencies": {
     "a-command": "^0.0.8",
+    "a-node-tools": "^0.1.0",
     "color-pen": "^0.1.0"
   },
   "lint-staged": {
