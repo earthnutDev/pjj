@@ -11,10 +11,10 @@ on:
 
 jobs:
   pub:
+    # 在提交的代码包含 `version` 字样时才运行该动作
+    # 或者手动触发
     name: |
       发布到 npm
-      在提交的代码包含 `version` 字样时才运行该动作
-      或者手动触发
     runs-on: ubuntu-latest
     permissions:
       packages: write
