@@ -45,9 +45,17 @@ jobs:
         run: |
           npm run build
 
-      - name: 发布到 npm
+      - name: 发布到 npm pjj
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
         run: |
+          cd dist
+          npm publish --provenance --access public
+
+      - name: 发布到 npm bvn
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        run: |
+          node scripts/change-name.js
           cd dist
           npm publish --provenance --access public

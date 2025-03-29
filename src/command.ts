@@ -2,7 +2,7 @@ import { Command } from 'a-command';
 import { cn } from './cn';
 
 /**  创建一个命令  */
-const command = new Command('bvn');
+const command = new Command('pjj');
 
 command
   .bind({

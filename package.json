@@ -1,7 +1,7 @@
 {
-  "name": "bvn",
+  "name": "pjj",
   "type": "module",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "module": "./mjs/index.mjs",
   "private": true,
   "author": {
@@ -21,7 +21,7 @@
     "prettier": "ixxx cls && prettier . --write",
     "test": "ixxx cls && jest --coverage",
     "vsu": "vsu",
-    "prepublishOnly": "npm run build && node dist/bin/bvn.js",
+    "prepublishOnly": "npm run build && node dist/bin/pjj.js",
     "prepare": "husky"
   },
   "files": [
@@ -37,17 +37,17 @@
     }
   },
   "keywords": [
-    "bvn"
+    "pjj"
   ],
   "license": "ISC",
-  "homepage": "https://earthnut.dev/bvn",
+  "homepage": "https://earthnut.dev/pjj",
   "bugs": {
     "url": "https://github.com/earthnutDev/gtu/issues",
     "email": "earthnut.dev@outlook.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/earthnutDev/bvn.git"
+    "url": "git+https://github.com/earthnutDev/pjj.git"
   },
   "publishConfig": {
     "access": "public",
@@ -95,6 +95,6 @@
     "typescript-eslint": "^7.18.0"
   },
   "bin": {
-    "bvn": "bin/bvn.js"
+    "pjj": "bin/pjj.js"
   }
 }
