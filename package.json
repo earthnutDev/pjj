@@ -10,7 +10,7 @@
   },
   "description": "禁止在项目的根目录执行 npm publish，防止意外发布。该脚本命令仅允许在 `prepublishOnly`  ` 钩子中执行。",
   "scripts": {
-    "build": "jja cls rm dist&&rollup --config rollup.config.js&&npm run clean:package",
+    "build": "jja rm dist&&rollup --config rollup.config.js&&npm run clean:package",
     "clean:package": "node scripts/clean-package-json.js",
     "push:version": "gvv",
     "push:submit": "gvv",
