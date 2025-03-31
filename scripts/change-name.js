@@ -3,7 +3,12 @@ import { writeFileSync } from 'node:fs';
 
 const packageJson = readFileToJsonSync('./dist/package.json');
 
-packageJson.name = 'bvn';
+/**  原来的名称  */
+const on = packageJson.name;
+/**  新包的名称  */
+const nn = 'bvn';
+packageJson.name = nn;
+packageJson.bin = Object.fromEntries([[nn, packageJson.bin[on]]]);
 delete packageJson.scripts;
 delete packageJson.devDependencies;
 delete packageJson['lint-staged'];

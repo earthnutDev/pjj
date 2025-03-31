@@ -21,7 +21,7 @@ _我构建后的 `package.json` 🀄️不包含 `scripts` 字段，所以仅考
 ## 安装
 
 ```bash
-npm install pjj --save-dev
+npm install --save-dev pjj
 ```
 
 ## 使用

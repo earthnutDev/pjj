@@ -5,11 +5,11 @@ import { cn } from './cn';
 const command = new Command('pjj');
 
 command
-  .bind({
-    'message <-m> (添加自定义的命令消息)': [],
-    'black <-b> (显示为黑色（默认）文本)': [],
-    'script <-s> (触发的勾子，默认为 prepublishOnly)': [],
-  })
+  .bind([
+    'message <-m> (添加自定义的命令消息)',
+    'black <-b> (显示为黑色（默认）文本)',
+    'script <-s> (触发的勾子，默认为 `prepublishOnly`)',
+  ])
 
   .run().isEnd.end;
 
