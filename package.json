@@ -1,7 +1,7 @@
 {
   "name": "pjj",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "description": "禁止在项目的根目录执行 npm publish，防止意外发布。该脚本命令需在 `prepublishOnly`  ` 钩子中配置",
   "scripts": {
