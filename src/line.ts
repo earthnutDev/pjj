@@ -1,6 +1,6 @@
 import pen from 'color-pen';
-import { cn } from './cn';
 import { noColor } from './command';
+import { dataStore } from './data-store';
 
 /**
  *
@@ -9,7 +9,7 @@ import { noColor } from './command';
  */
 export function line() {
   let str = '';
-  for (let i = 0; i < (cn ? 54 : 101); i++) {
+  for (let i = 0; i < dataStore.screenWith; i++) {
     str += noColor ? '=' : pen.random('=');
   }
   return str;

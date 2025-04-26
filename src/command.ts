@@ -1,17 +1,19 @@
 import { Command } from 'a-command';
 import { cn } from './cn';
+import { commandBind } from './types';
 
 /**  创建一个命令  */
-const command = new Command('pjj');
+const command = new Command<commandBind>('pjj');
 
-command
-  .bind([
-    'message <-m> (添加自定义的命令消息)',
-    'black <-b> (显示为黑色（默认）文本)',
-    'script <-s> (触发的勾子，默认为 `prepublishOnly`)',
-  ])
+command.bind([
+  'message <-m> (添加自定义的命令消息)',
+  'black <-b> (显示为黑色（默认）文本)',
+  'script <-s> (触发的勾子，默认为 `prepublishOnly`)',
+]);
 
-  .run().isEnd.end;
+command.run();
+
+command.isEnd(true);
 
 /**
  *  命令参数映射

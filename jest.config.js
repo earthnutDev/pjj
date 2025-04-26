@@ -8,12 +8,13 @@ export default () => {
       '^.+\\.tsx?$': [
         'ts-jest',
         {
-          isolatedModules: true,
           tsconfig: 'tsconfig.json',
         },
       ],
     },
     testMatch: ['**/*.test.(js|ts|tsx)'],
+    testTimeout: 500,
+    setupFilesAfterEnv: ['./jest.setup.ts'],
     collectCoverage: true,
     collectCoverageFrom: [
       'src/**/*.{ts,js,tsx,jsx}',

@@ -5,7 +5,7 @@ import json from '@rollup/plugin-json';
 import cleanup from 'rollup-plugin-cleanup';
 import copy from 'rollup-plugin-copy';
 
-const temporaryArr = ['node:', 'a-', 'color-pen'];
+const temporaryArr = ['node:', 'a-', 'color-pen', '@qqi'];
 
 export default {
   input: './index.ts',
@@ -16,7 +16,7 @@ export default {
       preserveModules: true,
       sourcemap: false,
       exports: 'named',
-      dir: 'dist/mjs',
+      dir: 'dist/',
     },
   ],
   // 配置需要排除的包
@@ -33,7 +33,6 @@ export default {
       targets: [
         { src: 'README.md', dest: 'dist' },
         { src: 'LICENSE', dest: 'dist' },
-        { src: 'bin', dest: 'dist' },
       ],
     }),
   ],
