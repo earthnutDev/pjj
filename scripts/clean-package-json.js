@@ -3,10 +3,7 @@ import {
   readFileToJsonSync,
   getDirectoryBy,
   writeJsonFile,
-  runOtherCode,
 } from 'a-node-tools';
-
-import { writeFileSync } from 'node:fs';
 
 let packageJson = readFileToJsonSync('./package.json');
 
@@ -21,7 +18,7 @@ packageJson = {
     email: 'earthnut.dev@outlook.com',
     url: 'https://earthnut.dev',
   },
-  files: ['bin.js', 'src', 'index.mjs'],
+  files: ['src', 'bin.mjs'],
   keywords: ['pjj'],
   repository: {
     type: 'git',
@@ -37,7 +34,7 @@ packageJson = {
     registry: 'https://registry.npmjs.org/',
   },
   bin: {
-    pjj: 'bin.js',
+    pjj: 'bin.mjs',
   },
 };
 
@@ -51,13 +48,13 @@ packageJson = {
 }
 
 // 写入 dist/bin.js
-{
-  await runOtherCode({ code: 'mkdir -p ./dist' });
-  writeFileSync(
-    'dist/bin.js',
-    `#!/usr/bin/env node
+// {
+//   await runOtherCode({ code: 'mkdir -p ./dist' });
+//   writeFileSync(
+//     'dist/bin.js',
+//     `#!/usr/bin/env node
 
-import './index.mjs';
-  `,
-  );
-}
+// import './index.mjs';
+//   `,
+//   );
+// }

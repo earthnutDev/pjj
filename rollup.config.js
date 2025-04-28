@@ -8,7 +8,7 @@ import copy from 'rollup-plugin-copy';
 const temporaryArr = ['node:', 'a-', 'color-pen', '@qqi'];
 
 export default {
-  input: './index.ts',
+  input: './bin.ts',
   output: [
     {
       format: 'es',

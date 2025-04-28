@@ -75,12 +75,3 @@ jobs:
         run: |
           cd dist
           npm publish --provenance --access public --tag ${{ env.tag }}
-
-      #  bvn 将不再进行版本维护
-      # - name: 发布到 npm bvn
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-      #   run: |
-      #     node scripts/change-name.js
-      #     cd dist
-      #     npm publish --provenance --access public
