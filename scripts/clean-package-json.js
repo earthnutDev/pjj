@@ -46,15 +46,3 @@ packageJson = {
 
   writeJsonFile(distPackagePath, packageJson);
 }
-
-// 写入 dist/bin.js
-// {
-//   await runOtherCode({ code: 'mkdir -p ./dist' });
-//   writeFileSync(
-//     'dist/bin.js',
-//     `#!/usr/bin/env node
-
-// import './index.mjs';
-//   `,
-//   );
-// }

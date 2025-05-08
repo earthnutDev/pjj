@@ -1,5 +1,5 @@
 import { _p } from 'a-node-tools';
-import pen from 'color-pen';
+import { bgBlackPen } from 'color-pen';
 import { dataStore } from './data-store';
 import { noColor } from './command';
 
@@ -13,6 +13,6 @@ export function blackSpace() {
     _p();
   } else {
     const str = ' '.repeat(dataStore.screenWith);
-    _p(pen.bgBlack(str));
+    _p(bgBlackPen(str));
   }
 }

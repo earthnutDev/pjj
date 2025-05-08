@@ -5,6 +5,7 @@ import json from '@rollup/plugin-json';
 import cleanup from 'rollup-plugin-cleanup';
 import copy from 'rollup-plugin-copy';
 import { external } from '@qqi/rollup-external';
+
 export default {
   input: './bin.ts',
   output: [
