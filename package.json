@@ -19,7 +19,7 @@
     "prepublishOnly": "npm run build && jja cls && node dist/bin.mjs --silent",
     "prepare": "husky"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@qqi/dev-log": ">=0.3.2 <1.0.0",
     "a-command": "^2.1.8",
