@@ -1,5 +1,9 @@
 import { dog } from './dog';
-import { pen, strInTerminalLength, truncateStringWithChar } from 'color-pen';
+import {
+  numberPen,
+  strInTerminalLength,
+  truncateStringWithChar,
+} from 'color-pen';
 import { noColor } from './command';
 import { dataStore } from './data-store';
 import { getRandomInt } from 'a-js-tools';
@@ -33,7 +37,7 @@ export function colorText(str: string) {
   return computerStr
     .split('')
     .map(char =>
-      noColor ? char : pen.number(getRandomInt(1, 225)).bgBlack(char),
+      noColor ? char : numberPen(getRandomInt(1, 225)).bgBlack(char),
     )
     .join('');
 }

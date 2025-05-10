@@ -1,7 +1,7 @@
 {
   "name": "pjj",
   "type": "module",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "private": true,
   "description": "禁止在项目的根目录执行 npm publish，防止意外发布。该脚本命令需在 `prepublishOnly`  ` 钩子中配置",
   "scripts": {
@@ -21,11 +21,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@qqi/dev-log": ">=0.3.2 <1.0.0",
-    "a-command": "^2.1.8",
-    "a-js-tools": ">=0.6.1 <1.0.0",
-    "a-node-tools": "^3.1.4",
-    "color-pen": "^2.0.2"
+    "@qqi/dev-log": "^0.3.3",
+    "a-command": "^2.1.9",
+    "a-js-tools": "^0.6.2",
+    "a-node-tools": "^3.1.5",
+    "color-pen": "^2.0.3"
   },
   "lint-staged": {
     "**/*.{js,ts,tsx,jex,md,mdx}": [
@@ -52,8 +52,8 @@
     "codecov": "^3.8.3",
     "coveralls": "^3.1.1",
     "eslint": "^9.26.0",
-    "eslint-config-prettier": "^10.1.3",
-    "eslint-plugin-jsdoc": "^50.6.11",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-jsdoc": "^50.6.13",
     "globals": "^16.1.0",
     "gvv": "^0.0.0",
     "husky": "^9.1.7",
@@ -70,6 +70,6 @@
     "tslib": "^2.8.1",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.32.0",
-    "vjj": "^0.3.3"
+    "vjj": "^0.3.4"
   }
 }
