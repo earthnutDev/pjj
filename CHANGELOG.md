@@ -1,5 +1,14 @@
 # 版本日志
 
+## v0.2.8 （5 🈷️ 24 日 2025 年）
+
+- 更新依赖（减少 [color-pen](https://www.npmjs.com/package/color-pen) 更新 `truncateStringWithChar` 函数逻辑差异导致的渲染错误 ）
+- 优化了渲染逻辑
+
+## v0.2.7 （5 🈷️ 24 日 2025 年）
+
+- 更新依赖
+
 ## v0.2.6 （5 🈷️ 11 日 2025 年）
 
 - 更新依赖
