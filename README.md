@@ -66,4 +66,4 @@ npm install --save-dev pjj
 
 ## 文档地址
 
-参看 [https://earthnut.dev/pjj/](https://earthnut.dev/pjj/)
+参看 [pjj/](https://earthnut.dev/npm/pjj/)

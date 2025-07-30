@@ -24,7 +24,7 @@ packageJson = {
     type: 'git',
     url: 'git+https://github.com/earthnutDev/pjj.git',
   },
-  homepage: 'https://earthnut.dev/pjj',
+  homepage: 'https://earthnut.dev/npm/pjj',
   bugs: {
     url: 'https://github.com/earthnutDev/pjj/issues',
     email: 'earthnut.dev@outlook.com',
